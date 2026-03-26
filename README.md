@@ -29,7 +29,7 @@ project/
 │   ├── database.py      # SQLAlchemy engine/session/base
 │   ├── models.py        # ORM models (Bank, Branch)
 │   ├── schemas.py       # Pydantic response models
-+│   └── routes.py        # API routes
+│   └── routes.py        # API routes
 ├── data/bank_branches.csv
 ├── tests/test_api.py
 ├── requirements.txt
