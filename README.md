@@ -1,12 +1,18 @@
 # Bank Branches API
 
-This repository contains a small REST API that serves bank and branch data loaded from a CSV into a local SQLite database on startup.
+A clean REST API built using FastAPI that provides bank and branch details. The data is loaded from a CSV file into a SQLite database on application startup.
 
-Important: this implementation uses only the `data/bank_branches.csv` file and does not use any existing SQL dumps or existing API code.
+🔗 Live API (Deployed on Render):
+https://bankbranchesapiassignment.onrender.com/
 
 Overview
-- REST API with two endpoints: list banks and fetch branch by IFSC.
-- On startup the service creates the SQLite schema and imports data from `data/bank_branches.csv` if the DB is empty.
+Provides APIs to:
+List all banks
+Fetch branch details using IFSC
+On startup:
+Creates database schema
+Loads data from data/bank_branches.csv (only if DB is empty)
+Built strictly as per assignment requirements (no external APIs or SQL dumps used)
 
 Tech stack
 - Python 3.10+
